@@ -1,0 +1,34 @@
+html,body{
+    height: 100%;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #95e7fa;
+    box-shadow: 0 0 2px inset #00000079;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#0c433f9a;
+    box-shadow: 0 0 10px 10px rgb(67, 226, 226);
+}
+.book-custom{
+    background-color: rgba(0 0 0 / 0.2);
+    color: #fff;
+    backdrop-filter: blur(3px);
+}
+.form-control:focus{
+    box-shadow: 0 0 0 4px #16e6d59a;
+    caret-color: #2f8881;
+}
+.btn-info{
+    --bs-btn-bg: #40dacf9a;
+    --bs-btn-border-color: rgba(37, 142, 135, 0.836);
+    --bs-btn-hover-bg: #40dacf9a;
+}
+.table-responsive{
+max-height: 30vh;
+overflow: auto !important;
+}

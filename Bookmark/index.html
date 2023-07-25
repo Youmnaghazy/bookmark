@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body class="bg-gradient bg-black">
+    <main class="container">
+        <header class="pt-3 book-inputs">
+            <h1 class="text-center fw-bold text-info">Bookmarker App</h1>
+            <section class="book-custom rounded-3 p-4 vstack gap-4">
+                <div>
+                    <label for="siteName" class="form-label">Site Name:</label>
+                    <input type="text" class="form-control" id="siteName" placeholder="BookMark Name....">
+                    <p class="alert alert-danger d-none" id="alertName">Name is required</p>
+                </div>
+                <div>
+                    <label for="siteUrl" class="form-label">Site URL:</label>
+                    <input type="text" class="form-control" id="siteUrl" placeholder="BookMark Url....">
+                    <p class="alert alert-danger d-none" id="alerturl">URL is required</p>
+                    <p class="alert alert-danger d-none" id="alertExist">URL is Existed</p>
+                </div>
+                <button class="btn btn-info mt-4" id="btnAdd">Add Bookmark</button>
+            </section>
+
+        </header>
+        <section class="book-data">
+            <div class="table-responsive book-custom p-3">
+                <table class="table table-sm mb-0 text-nowrap table-info text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">URL</th>
+                            <th scope="col">Action</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+    </main>
+ 
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
